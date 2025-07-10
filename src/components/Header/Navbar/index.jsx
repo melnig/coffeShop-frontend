@@ -5,7 +5,7 @@ import Home from "../../../pages/Home";
 import Coffee from "../../../pages/Coffee";
 import Shop from "../../../pages/Shop";
 import OurStory from "../../../pages/OurStory";
-import Wholesale from "../../../pages/Wholesale";
+import Wholesale from "../../../pages/WholeSale";
 
 export default function Navbar() {
   return (
