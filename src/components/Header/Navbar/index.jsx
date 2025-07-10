@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./Navbar.module.scss";
+
 import Home from "../../../pages/Home";
 import Coffee from "../../../pages/Coffee";
 import Shop from "../../../pages/Shop";

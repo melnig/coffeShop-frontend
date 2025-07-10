@@ -5,18 +5,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 16px 32px;
+
   list-style: none;
   margin-bottom: 0;
 }
 .navbarItem a {
-  margin: 0 16px;
+  display: inline-block;
   font-size: 18px;
   color: #3e3027;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
+  padding: 16px 32px;
 
   &:hover {
-    color: #6f4c3e;
+    background-color: #a4795b;
+    color: #fff;
   }
 }
