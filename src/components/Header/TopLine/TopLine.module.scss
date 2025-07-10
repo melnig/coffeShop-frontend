@@ -1,0 +1,26 @@
+.marqueeWrapper {
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #a4795b;
+  color: white;
+  position: relative;
+}
+
+.marquee {
+  display: inline-block;
+  animation: scroll 180s linear infinite;
+}
+
+.marqueeItem {
+  display: inline-block;
+  padding: 0 1rem;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

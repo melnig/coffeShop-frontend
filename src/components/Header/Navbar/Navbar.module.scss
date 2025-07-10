@@ -1,0 +1,21 @@
+.navbar {
+  background-color: #faf6f1;
+}
+.navbarMenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  list-style: none;
+}
+.navbarItem a {
+  margin: 0 16px;
+  font-size: 18px;
+  color: #3e3027;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #6f4c3e;
+  }
+}

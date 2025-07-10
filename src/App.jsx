@@ -1,11 +1,26 @@
+import { Routes, Route } from "react-router-dom";
+
+import Home from "./pages/Home";
+import Coffee from "./pages/Coffee";
+import Shop from "./pages/Shop";
+import OurStory from "./pages/OurStory";
+import Wholesale from "./pages/Wholesale";
+
+import Header from "./components/Header";
+
 import "./App.css";
 
 function App() {
   return (
     <>
-      <h1>CoffeShop Frontend</h1>
-      <h2>Test for Scrum-10 task</h2>
-      <p>Test for Develop branch</p>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/coffee" element={<Coffee />} />
+        <Route path="/shop" element={<Shop />} />
+        <Route path="/our-story" element={<OurStory />} />
+        <Route path="/wholesale" element={<Wholesale />} />
+      </Routes>
     </>
   );
 }
