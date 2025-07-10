@@ -1,0 +1,61 @@
+.root {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input {
+  border: 2px solid #3e3027;
+  border-radius: 24px;
+  padding: 8px 24px;
+  padding-left: 32px;
+  width: 300px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  height: 48px;
+  &:focus {
+    border-color: #6f4c3e;
+    box-shadow: 0 0 5px rgba(111, 76, 62, 0.5);
+    outline: none;
+  }
+}
+
+.inputWrapper {
+  display: inline-block;
+  position: relative;
+}
+.icon {
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  transform: translateY(-50%);
+  color: #3e3027;
+  pointer-events: none;
+  width: 20px;
+  height: 20px;
+}
+
+.clearIcon {
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  transform: translateY(-50%);
+  color: #3e3027;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  transition: all 0.3s ease;
+  &:hover {
+    color: #6f4c3e;
+  }
+}
+
+.accountIcon,
+.cartIcon {
+  color: #3e3027;
+  pointer-events: none;
+  width: 48px;
+  height: 48px;
+  margin-left: 32px;
+}
