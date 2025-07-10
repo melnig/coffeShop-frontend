@@ -10,12 +10,8 @@ export default function CartSection() {
   return (
     <div className={styles.cartSection}>
       <Container fluid>
-        <Row>
-          <Col sm={4}></Col>
-          <Col sm={4}></Col>
-          <Col sm={4}>
-            <Search />
-          </Col>
+        <Row className={styles.cartRow}>
+          <Search />
         </Row>
       </Container>
     </div>

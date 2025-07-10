@@ -1,0 +1,115 @@
+.carouselContainer {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.carouselTrack {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.carouselItem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+.carouselItemActive {
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+}
+
+.itemContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.textSection {
+  flex: 1;
+  padding: 10px;
+}
+
+.imageSection {
+  flex: 1;
+  padding: 10px;
+}
+
+.imageSection img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.arrow {
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.arrowLeft,
+.arrowRight {
+  background-color: #a4795b;
+  width: 56px;
+  height: 56px;
+  color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.arrowLeft {
+  left: 0;
+}
+
+.arrowRight {
+  right: 0;
+}
+
+.buttonCTA {
+  background-color: #a4795b;
+  border: none;
+  color: #fff;
+  padding: 14px 88px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buttonCTA:hover {
+  background-color: #8f654d;
+}
+
+.arrowLeft svg {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 18px;
+  left: 16px;
+}
+
+.arrowRight svg {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 18px;
+  right: 14px;
+}
