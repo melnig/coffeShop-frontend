@@ -2,6 +2,9 @@ import React from "react";
 import AccountIcon from "../AccountIcon";
 import CartIcon from "../CartIcon";
 import styles from "./Search.module.scss";
+import { Link } from "react-router-dom";
+import Account from "../../../../pages/Account";
+import Cart from "../../../../pages/Cart";
 
 function Search() {
   const [value, setValue] = React.useState("");
@@ -59,8 +62,16 @@ function Search() {
           </svg>
         )}
       </div>
-      <AccountIcon />
-      <CartIcon />
+      <Link
+        to="/account"
+        element={<AccountIcon />}
+        className={styles.accountLink}
+      >
+        <AccountIcon />
+      </Link>
+      <Link to="/cart" element={<CartIcon />} className={styles.cartLink}>
+        <CartIcon />
+      </Link>
     </div>
   );
 }

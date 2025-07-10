@@ -5,6 +5,8 @@ import Coffee from "./pages/Coffee";
 import Shop from "./pages/Shop";
 import OurStory from "./pages/OurStory";
 import Wholesale from "./pages/WholeSale";
+import Account from "./pages/Account";
+import Cart from "./pages/Cart";
 
 import Header from "./components/Header";
 
@@ -20,6 +22,8 @@ function App() {
         <Route path="/shop" element={<Shop />} />
         <Route path="/our-story" element={<OurStory />} />
         <Route path="/wholesale" element={<Wholesale />} />
+        <Route path="/account" element={<Account />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
     </>
   );
