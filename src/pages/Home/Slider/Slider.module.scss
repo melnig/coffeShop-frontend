@@ -36,11 +36,32 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  gap: 10px;
 }
 
 .textSection {
   flex: 1;
-  padding: 10px;
+  padding: 80px;
+}
+
+.textSection h2 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #a4795b;
+  margin-bottom: 24px;
+}
+
+.textSection h3 {
+  font-size: 40px;
+  font-weight: 500;
+  color: #3e3027;
+  margin-bottom: 16px;
+}
+
+.textSection p {
+  font-size: 18px;
+  color: #7c6f66;
+  margin-bottom: 32px;
 }
 
 .imageSection {
@@ -49,7 +70,7 @@
 }
 
 .imageSection img {
-  width: 100%;
+  width: 486px;
   height: auto;
   object-fit: cover;
   border-radius: 8px;
@@ -77,6 +98,11 @@
   z-index: 1;
 }
 
+.arrowLeft:hover,
+.arrowRight:hover {
+  background-color: #b88a6e;
+}
+
 .arrowLeft {
   left: 0;
 }
@@ -89,27 +115,33 @@
   background-color: #a4795b;
   border: none;
   color: #fff;
-  padding: 14px 88px;
+  padding: 12px 40px;
   cursor: pointer;
+  border-radius: 20px;
   transition: background-color 0.3s;
 }
 
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .buttonCTA:hover {
-  background-color: #8f654d;
+  background-color: #b88a6e;
 }
 
 .arrowLeft svg {
   position: absolute;
   width: 24px;
   height: 24px;
-  top: 18px;
-  left: 16px;
+  top: 16px;
+  left: 14px;
 }
 
 .arrowRight svg {
   position: absolute;
   width: 24px;
   height: 24px;
-  top: 18px;
+  top: 16px;
   right: 14px;
 }

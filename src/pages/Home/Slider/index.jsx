@@ -1,25 +1,30 @@
 import React, { useState } from "react";
 import styles from "./Slider.module.scss";
+import sliderImg1 from "../../../assets/images/home/slider1/slider-img1.png";
+import sliderImg2 from "../../../assets/images/home/slider1/slider-img2.png";
+import sliderImg3 from "../../../assets/images/home/slider1/slider-img3.png";
 
 const items = [
   {
-    title: "Freshly Brewed Coffee",
-    description:
-      "Experience the rich aroma and taste of our freshly brewed coffee.",
-    image: "https://placehold.co/600x400/EEE/31343C",
-    buttonText: "Order Now",
+    title: "Gentle Pleasure",
+    description: "DECAF, FULL OF TASTE",
+    text: "Who says decaf can't be bold? This trio delivers rich taste and smooth crema — without the caffeine. Sip day or night and savor every moment, worry-free.",
+    image: sliderImg1,
+    buttonText: "Buy now!",
   },
   {
-    title: "Delicious Pastries",
-    description: "Pair your coffee with our selection of delicious pastries.",
-    image: "https://placehold.co/600x400/EEE/31343C",
-    buttonText: "View Menu",
+    title: "Holiday Favorite",
+    description: "TOFFEE NUT BLISS",
+    text: "Sweet, nutty, and cozy — just like your favorite winter memories. This limited blend wraps you in warm toffee notes and festive cheer. One sip, and it’s holiday season in a cup.",
+    image: sliderImg2,
+    buttonText: "Buy now!",
   },
   {
-    title: "Cozy Atmosphere",
-    description: "Enjoy your coffee in our cozy and welcoming atmosphere.",
-    image: "https://placehold.co/600x400/EEE/31343C",
-    buttonText: "Visit Us",
+    title: "Bold & Unique",
+    description: "IRISH COFFEE VIBES",
+    text: "A hint of whiskey aroma, a wave of smooth coffee — this drink brings warmth with every sip. Elevate your breaks with Jacobs' twist on a classic Irish delight.",
+    image: sliderImg3,
+    buttonText: "Buy now!",
   },
 ];
 
@@ -67,8 +72,13 @@ const Carousel = () => {
             <div className={styles.itemContent}>
               <div className={styles.textSection}>
                 <h2>{slide.title}</h2>
-                <p>{slide.description}</p>
-                <button className={styles.buttonCTA}>{slide.buttonText}</button>
+                <h3>{slide.description}</h3>
+                <p>{slide.text}</p>
+                <div className={styles.buttonContainer}>
+                  <button className={styles.buttonCTA}>
+                    {slide.buttonText}
+                  </button>
+                </div>
               </div>
               <div className={styles.imageSection}>
                 <img src={slide.image} alt={slide.title} />
