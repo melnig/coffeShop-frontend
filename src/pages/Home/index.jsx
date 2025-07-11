@@ -1,7 +1,8 @@
-import Slider from "../../components/Slider";
-import styles from "./Home.module.scss";
-
 import React from "react";
+
+import Slider from "./Slider";
+import Purpose from "./Purpose";
+import styles from "./Home.module.scss";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       </div>
       <div className={styles.slider}>
         <Slider />
+        <Purpose />
       </div>
     </div>
   );

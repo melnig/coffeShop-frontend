@@ -1,0 +1,60 @@
+.purpose {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  width: 100%;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 80px 140px;
+  background-color: #ead9c9;
+  text-align: center;
+}
+
+.text h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #3e3027;
+  margin-bottom: 40px;
+}
+
+.text p {
+  margin-bottom: 40px;
+  font-size: 18px;
+  color: #3e3027;
+}
+
+.text h4 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #3e3027;
+  margin-bottom: 40px;
+}
+
+.text button {
+  background-color: #a4795b;
+  border: none;
+  color: #fff;
+  padding: 12px 40px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+.row .image {
+  overflow: hidden;
+}
+
+.row .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
